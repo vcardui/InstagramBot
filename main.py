@@ -29,5 +29,4 @@ carduiBot = InstagramBot()
 instagramPost = InstagramPost()
 
 instagramPost.get_data_base()
-
-# carduiBot.new_post()
+carduiBot.new_post()
