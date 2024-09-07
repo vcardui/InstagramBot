@@ -18,7 +18,7 @@
 
 # ------------------------- Libraries -------------------------
 import datetime  # datetime.datetime.now()
-import os  # os.path.exists(path)
+import os  # os.listdir(path)
 import pandas as pd
 
 # ------------------------- Variables -------------------------
@@ -41,3 +41,15 @@ class InstagramBot:
 
     def new_post(self):
         pass
+
+    def ask_for_data(self):
+        caption = input("Type in the post's caption: ")
+        path = "/"
+        dir_list = os.listdir(path)
+
+        print("Files and directories in '", path, "' :")
+
+        # print the list
+        print(dir_list)
+
+        # idinstagrampost,caption,pathtoimage,dateadded,dateposted
